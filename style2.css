@@ -1,0 +1,39 @@
+*{
+    margin: 0; padding: 0; border: 0; box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+    min-height: 100vh;
+    padding: 2em;
+}
+#container{
+    min-height: clac(100vh - 4em);
+    border: 2px solid #222;
+    padding: 2em;
+}
+h1{
+    font-weight: normal; color:yellowgreen;
+    text-transform: lowercase;
+    margin-bottom: 2em;
+}
+
+#photoArray{
+    display:grid;
+    grid:.5em;
+    grid-template-areas: 
+    "photoOne photoTwo photoThree"
+     "photoOne photoFour photoFive ";
+     grid-template-columns:1fr 20% 20% ;
+}
+
+#photoArray > div{
+  border: 2px solid #EEE;
+}
+#photoArray > div:first-child {
+  grid-area: photoOne;
+  height: 450px;
+}

@@ -3,37 +3,185 @@
 }
 
 
-
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: grey;
-    min-height: 100vh;
-    padding: 2em;
-}
-#container{
-    min-height: clac(100vh - 4em);
-    border: 2px solid #222;
-    padding: 2em;
-}
-h1{
-    font-weight: normal; color:yellowgreen;
-    text-transform: lowercase;
-    margin-bottom: 2em;
+.box__heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#photoArray{
-    display:grid;
-    grid:.5em;
-    grid-template-areas: 
-    "photoOne photoTwo photoThree"
-     "photoOne photoFour photoFive ";
-     grid-template-columns:1fr 20% 20% ;
+
+.box-container{
+    display: flex;
+    gap:30px 30px;
+    justify-content: space-around;
+    /* background-color: gold; */
+    padding: 50px 0 0 0px;
+    width:100%;
+    
+   }
+   
+   .man-box{
+       /* border: 2px solid purple; */
+       display: flex;
+       width:450px;
+       height: 304px;
+   }
+   
+   .play-box{
+       display: flex;
+       width:450px;
+       height: 304px;
+   }
+   .play-box1{
+       padding: 0 0 0 0px;
+       display: flex;
+       width:450px;
+       height: 304px;
+       /* border: 2px solid purple; */
+   }
+   
+   
+   .box{
+       width:500px;
+       height: 200px;
+   }
+   
+   .box1{
+       background-color: blue;
+       width:330px;
+       height: 200px;
+      
+   }
+   
+   .boxes{
+       width:450px;
+       height: 270px;
+      
+   }
+   
+   .boxed{
+       width:450px;
+       height: 140px;
+   }
+   
+   .box2{
+       background-color: red;
+       
+   }
+   .box3{
+       background-color:green;
+       border-left: 2px solid white;
+   
+   }
+    .box4{
+       background-color: brown;
+    }
+   
+     .box5{
+       background-color: blueviolet;
+       border-left: 2px solid white;
+     }
+   .box6{
+       background-color: yellow;
+       width:500px;
+       height: 270px;
+   }
+   
+   .head{
+    padding: 0 0 0 10px;
+   }
+   
+   .box7{
+       background-color: blue;
+       width:330px;
+       height: 200px;
+       
+      
+   }
+   
+   .box8{
+       background-color: red;
+      
+   }
+   .box9{
+       background-color:green;
+       border-left: 2px solid white;
+      
+   
+   }
+   
+   .box10{
+       background-color: orange;
+   }
+   .box11{
+       background-color: darkred;
+       border-left: 2px solid white;
+   }
+   .box12{
+       background-color: tomato;
+       border-left: 2px solid white;
+   }
+   .box13{
+       background-color: brown;
+       width: 500px;
+       
+   }
+   .text{
+       background-color: black;
+       position: relative;
+       top: -20px;
+       text-align: center;
+   }
+   .word{
+       color:white;
+   }
+   .text1{
+       background-color: black;
+       position: relative;
+       top: 270px;
+       text-align: center;
+   }
+   .word{
+       color:white;
+      
+   }
+   
+   .red-line{
+       width:5px;
+       height: 20px;
+       background-color: red;
+   }
+   .red-bar{
+       display:flex;
+       padding:0 0 20px 0;
+   }
+   .box__head{
+    font-weight: bold;
+   }
+   .box__container2{
+    /* background-color: blueviolet; */
+    padding: 46px 0 0 0;
+   }
+
+
+
+@media (max-width:768px) {
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 1600px;
+    }
 }
 
-#photoArray > div{
-  border: 2px solid #EEE;
-}
-#photoArray > div:first-child {
-  grid-area: photoOne;
-  height: 450px;
+
+@media (max-width:425px) {
+    .box-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1600px;
+    }
 }
